@@ -65,8 +65,6 @@ public class Interface {
     private static void viewWall() {
         userWall();
         System.out.println(usersAndTweets);
-
-
     }
 
     private static void userWall() {
