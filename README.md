@@ -1,7 +1,7 @@
 Twitter Clone Java
 =========
 
-The challenge was to build a basic social network Command Line App in Java.
+The challenge was to build a basic social network command line app in Java.
 
 Installation
 ----------
@@ -11,9 +11,10 @@ Installation
 
 Once launched, you will be presented with a menu of options. Key features are;
 
-* Creating Users
-* Tweeting
+* Creating User
+* Post Tweet
 * View Wall
+* Follow User
 * Exit ​
 
 Technologies/Approach
@@ -22,3 +23,4 @@ The app is built in Java using the Intellij IDEA IDE.
 
 Key functionality is tested using JUnit.
 
+![Alt text](/public/images/screenshot.jpg?raw=true)
