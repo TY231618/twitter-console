@@ -12,7 +12,12 @@ public class Interface {
        commands();
     }
 
-    public static void optionCommands() {
+    private static List<String> post = new ArrayList<String>();
+    private static List<String> users = new ArrayList<String>();
+    private static Map<String, String> usersAndTweets = new HashMap<String, String>();
+
+
+    private static void optionCommands() {
         System.out.println("User Options");
         System.out.println("1. Create User");
         System.out.println("2. Post Tweet");
@@ -30,6 +35,9 @@ public class Interface {
                 createPost();
                 break;
             case 3:
+                viewWall();
+                break;
+            case 4:
                 exit();
                 break;
         }
@@ -41,7 +49,6 @@ public class Interface {
     }
 
     private static void createUser() {
-        List<String> users = new ArrayList<String>();
         System.out.println("Enter your Username: ");
         users.add(scanner());
         System.out.println("Pick another option from the menu:");
@@ -49,14 +56,26 @@ public class Interface {
     }
 
     private static void createPost() {
-        List<String> post = new ArrayList<String>();
         System.out.println("Enter Tweet: ");
         post.add(scanner());
         System.out.println("Pick another option from the menu:");
         commands();
     }
 
+    private static void viewWall() {
+        userWall();
+        System.out.println(usersAndTweets);
+
+
+    }
+
+    private static void userWall() {
+        usersAndTweets.put(users.toString(), post.toString());
+    }
+
     private static void exit() {
+        System.out.println("Gooodbye");
     }
 
 }
+
